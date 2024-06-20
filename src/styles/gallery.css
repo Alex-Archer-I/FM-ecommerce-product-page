@@ -1,0 +1,40 @@
+.gallery {
+    padding: 3rem;
+    width: 50%;
+}
+
+.gallery_img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.gallery_actions {
+    width: 100%;
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery_button {
+    width: 6.5rem;
+    border: none;
+    outline: transparent;
+    cursor: pointer;
+    background: none;
+    border-radius: 15px;
+}
+
+.gallery_button-active {
+    border: solid 0.1rem var(--orange);
+    filter: opacity(0.5);
+}
+
+.gallery_button_image {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+}
