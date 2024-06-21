@@ -1,6 +1,8 @@
 @import './initial.css';
 @import './header.css';
 @import './gallery.css';
+@import './thumbnails.css';
 @import './info.css';
 @import './cart-actions.css';
 @import './cart.css';
+@import './lightbox.css';

@@ -20,8 +20,8 @@ const Gallery = (props) => {
 
     return (
         <div className="gallery">
-            <img src={imgSrc} alt="" className="gallery_img"/>
-            <ul className="gallery_actions">
+            <img src={imgSrc} alt="" className="gallery_img" onClick={() => props.openLightbox(true)}/>
+            <ul className="thumbnails">
                 {content}
             </ul>
         </div>
