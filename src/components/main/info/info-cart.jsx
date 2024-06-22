@@ -2,7 +2,6 @@ import {useContext} from 'react';
 
 import {CartContext} from '../../store/context-provider';
 
-import IconCart from '../../svg/icon-cart';
 import IconPlus from '../../svg/icon-plus';
 import IconMinus from '../../svg/icon-minus';
 
@@ -36,12 +35,9 @@ const InfoCart = (props) => {
 
     return (
         <div className="cart_actions">
-            <div className="cart_actions_amount">
-                <button className="cart_actions_amount_button" onClick={minusButtonHandler}><IconMinus/></button>
-                <p className="cart_actions_amount_text">{amount}</p>
-                <button className="cart_actions_amount_button" onClick={plusButtonHandler}><IconPlus/></button>
-            </div>
-            <button className="cart_actions_add"><IconCart/> <span>Add To Cart</span></button>
+            <button className="cart_actions_button" onClick={minusButtonHandler}><IconMinus/></button>
+                <p className="cart_actions_text">{amount}</p>
+            <button className="cart_actions_button" onClick={plusButtonHandler}><IconPlus/></button>
         </div>
     );
 };

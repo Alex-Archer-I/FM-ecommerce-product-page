@@ -1,7 +1,7 @@
 const NavDesk = () => {
     return (
-        <nav>
-            <ul className="nav-desk">
+        <nav className="nav-desk">
+            <ul className="nav-desk_list" role="list">
                 <li><a href="#" className="nav-desk_link">Collections</a></li>
                 <li><a href="#" className="nav-desk_link">Men</a></li>
                 <li><a href="#" className="nav-desk_link">Women</a></li>

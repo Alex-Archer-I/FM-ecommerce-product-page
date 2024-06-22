@@ -1,9 +1,9 @@
 import {useState, useContext} from 'react';
-import {CartContext} from '../store/context-provider';
+import {CartContext} from '../../store/context-provider';
 
 import CartItem from './cart-item';
 
-import IconCart from '../svg/icon-cart';
+import IconCart from '../../svg/icon-cart';
 
 const Cart = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,13 +22,13 @@ const Cart = () => {
     };
 
     if (cartContent.length === 0) {
-        content = <p>Your cart is empty</p>
+        content = <p className="cart_text_empty">Your cart is empty</p>
     } else {
         content = <>
             <ul className="cart_list">{cartContent.map(item => {
                 return <CartItem product={item} deleteHandler={deleteHandler} key={item.product.id}/>
             })}</ul>
-            <button>Checkout</button>
+            <a className="cart_link">Checkout</a>
         </>
     };
 
@@ -36,7 +36,7 @@ const Cart = () => {
 
     return (
         <div className="cart">
-            <button className="cart_button" onClick={toggleCart}>
+            <button className="cart_button" onClick={toggleCart} aria-label="Cart button">
                 <IconCart/>
                 {cartContent.length ? <p className="cart_badge">{cartAmount}</p> : null}
             </button>

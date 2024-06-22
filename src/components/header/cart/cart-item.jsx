@@ -1,4 +1,4 @@
-import IconDelete from '../svg/icon-delete';
+import IconDelete from '../../svg/icon-delete';
 
 const CartItem = ({product, deleteHandler}) => {
     const imgSrc = `./images/${product.product.images.pictures[0].path}`;
@@ -12,7 +12,7 @@ const CartItem = ({product, deleteHandler}) => {
                 <span>{product.product.title}</span>
                 <span><span>{product.product.price}</span> x <span>{product.amount}</span> <span className="cart_item_text-bold">${totalPrice}</span></span>
             </p>
-            <button className="cart_item_delete" onClick={() => {deleteHandler(product.product.id)}}><IconDelete/></button>
+            <button className="cart_item_delete" onClick={() => {deleteHandler(product.product.id)}} aria-label="Delete product from cart"><IconDelete/></button>
         </li>
     );
 };

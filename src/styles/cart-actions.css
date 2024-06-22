@@ -1,70 +1,38 @@
 .cart_actions {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-}
-
-.cart_actions_amount {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 35%;
-    background-color: var(--light-grayish-blue);
-    border-radius: 10px;
+    width: 95%;
+    max-width: 15rem;
     padding: 1rem 0.5rem;
 }
 
-.cart_actions_amount_button {
+.cart_actions_button {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: solid 0.2rem var(--orange);
     outline: transparent;
-    background-color: transparent;
+    background-color: var(--white);
     cursor: pointer;
-}
-
-.cart_actions_amount_button:hover {
-    opacity: 0.5;
-}
-
-.cart_actions_amount_text {
-    font-weight: 700;
-}
-
-.cart_actions_add {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    position: relative;
-    width: 60%;
-    padding: 1rem 0.5rem;
-    background-color: transparent;
-    color: var(--black);
-    font-weight: 700;
-    border: none;
-    outline: transparent;
     border-radius: 10px;
-    cursor: pointer;
+    fill: var(--orange);
 }
 
-.cart_actions_add::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
+.cart_actions_button use {
+    fill: inherit;
+}
+ 
+.cart_actions_button:hover {
     background-color: var(--orange);
-    z-index: -1;
+    fill: var(--white);
 }
 
-.cart_actions_add:hover::before,
-.cart_actions_add:focus::before {
-    opacity: 0.5;
-}
-
-.cart_actions_add .icon-cart path {
-    fill: black;
+.cart_actions_text {
+    font-weight: 700;
+    background-color: var(--light-grayish-blue);
+    padding: 0.6rem 25%;
+    border-radius: 10px;
 }

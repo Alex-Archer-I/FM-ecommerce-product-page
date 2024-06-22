@@ -2,7 +2,7 @@
     width: 100%;
     margin-top: 2rem;
     list-style: none;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -47,4 +47,10 @@
 .thumbnails-lightbox {
     width: 30rem;
     justify-content: space-evenly;
+}
+
+@media screen and (min-width: 700px) {
+    .thumbnails {
+        display: flex;
+    }
 }
