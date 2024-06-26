@@ -36,6 +36,7 @@
     border-radius: 15px;
     box-shadow: 3px 5px 10px var(--black);
     transform: translateX(-72%);
+    z-index: 10;
 }
 
 .cart_title {
